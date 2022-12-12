@@ -10,6 +10,7 @@ function FormInputs( {formData, handleChangeCheckbox, handleChangeWithoutCheckbo
               <label htmlFor="name-input" className="name-input">
                 <b>İsim Soyisim </b>
               </label>
+              <br/>
               <input
                 type="text"
                 className="label"
@@ -158,7 +159,7 @@ function FormInputs( {formData, handleChangeCheckbox, handleChangeWithoutCheckbo
               <label htmlFor="ekstra-input" className="eksta-input">
                 <b>Ekstra Notlar</b>
               </label>
-
+                <br/>
               <input
                 className="label"
                 type="text"
@@ -174,6 +175,7 @@ function FormInputs( {formData, handleChangeCheckbox, handleChangeWithoutCheckbo
               <label htmlFor="siparisAdet">
                 <b>Sipariş Adedi</b>
               </label>
+                    <br/>
               <input
                 className="label"
                 type="number"

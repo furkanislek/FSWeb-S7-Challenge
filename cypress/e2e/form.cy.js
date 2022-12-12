@@ -27,7 +27,7 @@ describe("Select True Form Control", () => {
       .should("have.attr", "id", "size-dropdown");
 
     for(var i = 1 ; i<5 ;  i++){
-      cy.get('.boyutFlex > :nth-child(1)').click();
+      cy.get(`.boyutFlex > :nth-child(${i}) >label`).click();
     }
 
     for (var j = 1; j < 28; j++) {

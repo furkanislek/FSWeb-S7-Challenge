@@ -33,6 +33,26 @@
   margin-bottom: 1.5rem;
 }
 
+@media(max-width:1150px) {
+  .flexLabelsBoyut{
+    flex-direction: column;
+  }
+}
+
+@media(max-width:750px) {
+  .flexLabels{
+    flex-direction: column;
+  }
+
+  .flexLabelsBoyut{
+    flex-direction: column;
+  }
+
+  .boyutFlex{
+    flex-direction: column;
+  }
+}
+
 .flexLabelsEkstra {
   margin-top: 1.5rem;
 }
