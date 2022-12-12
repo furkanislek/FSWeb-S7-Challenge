@@ -16,7 +16,7 @@ const App = () => {
           <h1>Teknolojik Yemekler</h1>
         </Link>
         <div className="links">
-          <Link className="link" to="/" id="order-pizza">
+          <Link className="link" to="/" >
             Ana Sayfa
           </Link>
           <Link className="link" to="/pizza" id="order-pizza">
@@ -30,7 +30,6 @@ const App = () => {
 
         <Route path="/pizza" component={Form}></Route>
       </Switch>
-      <div></div>
     </>
   );
 };

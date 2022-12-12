@@ -4,7 +4,8 @@ import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { Link } from "react-router-dom";
 import PizzaFaydalari from "./PizzaFaydalari";
-import Footer from "./Footer";
+import FooterSiparis from "./FooterSiparis";
+import PizzaParty from "./PizzaParty";
 
 function Home() {
   const images = [
@@ -23,9 +24,10 @@ function Home() {
             <div key={index} style={{ width: "100%" }}>
               <Link to="/pizza" id="pizza-form">
                 <img
-                  style={{ maxWidth: "100%", maxHeight: "20rem" }}
+                  style={{ minWidth: "100%", maxHeight: "50rem" , filter: "blur(2.8px)"}}
                   alt="Slide Image"
                   src={each}
+                  id="sliderImg"
                 />
               </Link>
             </div>
@@ -34,12 +36,17 @@ function Home() {
       </div>
 
       <section>
-        <Link className="link" to="/pizza" id="order-pizza">
+        <Link className="link buttonInDiv" to="/pizza" >
           <button>Sipariş Oluştur</button>
         </Link>
       </section>
+
+    
+
       <PizzaFaydalari />
-      <Footer />
+
+      <PizzaParty/>
+      <FooterSiparis />
     </>
   );
 }
