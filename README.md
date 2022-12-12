@@ -37,7 +37,7 @@ Bitmiş proje aşağıdaki gereklilikleri içermelidir:
 - [ ] Route u  "/pizza" olan bir sipariş formu
 - [ ] Id'si "pizza-form" olan bir form
 - [ ] Id'si "name-input" olan bir isim inputu 
-- [ ] İsim için bir doğrulama(validation) ve hata mesajı (İsim en az 2 karakter olmalıdır) (Testlerin geçtiğinden emin olmak için tam olarak bu hata mesajını kullanın) ::: BU HATA MESAJINI KULLANMAK ÇOK ÖNEMLİ (testlere dahil!)
+- [ ] İsim için bir doğrulama(validation) ve hata mesajı (isim en az 2 karakter olmalıdır) (Testlerin geçtiğinden emin olmak için tam olarak bu hata mesajını kullanın) ::: BU HATA MESAJINI KULLANMAK ÇOK ÖNEMLİ (testlere dahil!)
 - [ ] Pizza boyutunun seçilebileceği "size-dropdown" id'li bir dropdown 
 - [ ] Malzemeler için bir checklist(checkbox) - en az 4 adet (ipucu: name attributeları farklı olsun!)
 - [ ] Özel seçimler için bir text input "special-text" id'li

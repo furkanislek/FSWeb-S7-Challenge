@@ -1,0 +1,113 @@
+.container-form {
+  max-width: 50%;
+  margin: 1rem auto 4rem;
+}
+
+.container-form h2 {
+  font-size: 1.5rem;
+}
+
+.ekMalzemelerDiv {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.ekMalzemelerDiv label {
+  margin-right: 1rem;
+}
+.ekMalzemelerDiv label input {
+  margin-right: 0.5rem;
+}
+
+.ekMalzemelerDiv .ekMalzemeler {
+  margin-right: 1rem;
+}
+.errors {
+  color: red;
+}
+
+.flexLabels {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.flexLabelsEkstra {
+  margin-top: 1.5rem;
+}
+.flexLabelsBoyut {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.flexLabelsBoyut .boyutFlex {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-right: 12rem;
+}
+.flexLabelsBoyut .boyutFlex label input {
+  margin-right: 0.5rem;
+  font-size: 1.5;
+}
+
+.flexLabels .name-input {
+  padding-top: 1rem;
+}
+
+.flexLabels .adres-input {
+  padding-top: 1rem;
+}
+.flexLabels .selectFood {
+  padding-top: 1rem;
+}
+.flexLabels .eksta-input {
+  padding-top: 1rem;
+}
+
+.label {
+  border-style: none;
+  border-bottom: 0.5px solid rgb(0, 41, 10);
+  width: 15rem;
+  background-color: transparent;
+  margin-left: 1.2rem;
+}
+.label:focus {
+  outline-width: 0;
+  border-style: none;
+  border-bottom: 3px solid rgb(0, 41, 10);
+}
+
+.selectOpt {
+  margin-left: 2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+}
+
+#submit {
+  padding: 0.8rem 1.8rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  background-image: linear-gradient(-180deg, #00d775, #00bd68);
+  border-width: 0;
+}
+
+#submit:disabled {
+  background-image: none;
+}
+
+.alertSiparis {
+  margin-top: 2rem;
+  background-color: rgba(10, 255, 112, 0.603);
+  padding: 1rem;
+  max-width: max-content;
+  border-radius: 1rem;
+
+}
+.alertSiparis p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
