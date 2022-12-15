@@ -49,26 +49,7 @@ describe("Select True Form Control", () => {
     cy.get("#submit")
     .click()
 
-    cy.get('p').should("have.text" , "Sipariş Başarı İle Alındı")
-
-    // cy.get("#name-data")
-    // .should("include.text", 
-    // "Furkan Akif"
-    // );
-    // cy.get("#adres-data")
-    // .should("include.text", 
-    // "Gaziantep"
-    // );
-    // cy.get("#pizzaBoyut-data")
-    // .should("include.text", 
-    // "battalBoy"
-    // );
-    // cy.get("#ekMalzemeler-data")
-    // .should("include.text", 
-    // "1.Ek Malzeme : Beyaz Peynir"
-    // );
-    // cy.get("#siparisAdet-data")
-    // .should("include.text" , "1")
+    cy.get('p').should("have.text" , "Tebrikler! Pizza'nız yola çıktı")
 
   });
 });

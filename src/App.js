@@ -12,6 +12,9 @@ const App = () => {
         <div>Pizza Aldım Kabul Ettim</div>
       </div>
       <header className="header">
+      <img src="https://i.ibb.co/PgVkY8P/pizza.png" alt="pizza" className="pizzaImg" />
+      <img src="https://i.ibb.co/PgVkY8P/pizza.png" alt="pizza" className="pizzaImg2" />
+    
         <Link to="/">
           <h1>Teknolojik Yemekler</h1>
         </Link>
@@ -24,7 +27,6 @@ const App = () => {
           </Link>
         </div>
       </header>
-
       <Switch>
         <Route exact path="/" component={Home}></Route>
 

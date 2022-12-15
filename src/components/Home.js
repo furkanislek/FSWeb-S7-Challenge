@@ -24,7 +24,7 @@ function Home() {
             <div key={index} style={{ width: "100%" }}>
               <Link to="/pizza" id="pizza-form">
                 <img
-                  style={{ minWidth: "100%", maxHeight: "50rem" , filter: "blur(2.8px)"}}
+                  style={{ minWidth: "100%", maxHeight: "50rem" }}
                   alt="Slide Image"
                   src={each}
                   id="sliderImg"
@@ -41,10 +41,7 @@ function Home() {
         </Link>
       </section>
 
-    
-
       <PizzaFaydalari />
-
       <PizzaParty/>
       <FooterSiparis />
     </>

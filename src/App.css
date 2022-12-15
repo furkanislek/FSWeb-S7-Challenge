@@ -4,8 +4,10 @@
   font-size: 20px;
 }
 
-header > h1 {
+header h1 {
   background-color: #e0144c;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 #root > header > div {
@@ -17,18 +19,50 @@ header > h1 {
 }
 
 .header {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 12rem;
   background-color: #e0144a;
   display: flex;
   justify-content: space-around;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1500px) {
+ 
   .header {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
+  .links{
+    display: flex;
+    flex-direction: column;
+  }
+  .links a {
+    margin-top: 1rem;
+  }
+  
+  .pizzaImg{
+    top: 22% !important;
+  }
+  
+  .pizzaImg2 {
+    top: 22% !important;
+  }
+}
+
+@media (max-width:1000px)
+{
+  .pizzaImg{
+    top: 35% !important;
+  }
+  .pizzaImg2 {
+    top: 35% !important;
+  }
+  .buttonInDiv button {
+    top: 100% !important;
+    background-color: aqua;
+  }
+}
+@media (max-width: 1220px) {
   .slogan {
     flex-direction: column;
     text-align: center;
@@ -36,12 +70,23 @@ header > h1 {
   #sliderImg {
     height: 90vh;
   }
+  .links{
+    display: flex;
+    flex-direction: column;
+  }
+  .links a {
+    margin-top: 1rem;
+  }
+}
+
+.pizzaText p {
+  text-indent: 2rem;
 }
 
 .slogan {
   display: flex;
   justify-content: space-between;
-  padding: 10px 15rem;
+  padding: 10px 20rem;
 }
 
 .slogan h2 {
@@ -99,6 +144,8 @@ header > h1 {
   transform: translate(-50%);
   z-index: 999;
 }
+
+
 
 .buttonInDiv:hover {
   opacity: 1;
@@ -259,10 +306,10 @@ section button {
   background-color: transparent;
 }
 .footerContainerSiparis .icons a .gitIconsSiparis:hover {
-  color: #fff;
+  opacity: 0.8;
 }
 .footerContainerSiparis .icons a .linkIconsSiparis:hover {
-  color: #fff;
+  opacity: 0.8;
 }
 
 .buttonKapatma {
@@ -275,6 +322,7 @@ section button {
   display: flex;
   justify-content: space-around;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .pizzaPartyFlex .pizzaPartyImg img {
@@ -306,3 +354,38 @@ section button {
     max-width: 100%;
   }
 }
+
+.pizzaImg{
+  width: 4rem;
+  padding: 0rem;
+  margin: 0;
+  position: absolute;
+  top: 7%;
+  left: 12%;
+  overflow: hidden;
+  z-index: 9;
+  animation:  animationPizza 5s linear infinite alternate ;
+}
+
+.pizzaImg2 {
+  width: 4rem;
+  padding: 0rem;
+  margin: 0;
+  position: absolute;
+  top: 7%;
+  left: 80%;
+  overflow: hidden;
+  z-index: 9;
+  animation:  animationPizza 5s linear infinite alternate ;
+}
+
+@keyframes animationPizza {
+	from {
+		transform: translateX(0) rotate(0deg);
+	}
+	to {
+		transform: translateX(100%) rotate(359deg);
+	}
+ 
+}
+

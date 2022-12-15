@@ -40,25 +40,25 @@ const schema = yup.object().shape({
   name: yup
     .string()
     .min(2, "İsim en az 2 karakter olmalıdır")
-    .required("İsim en az 2 karakter olmalıdır"),
+    .required(),
   adres: yup
     .string()
-    .min(2, "Your Adres must be more than 2 letters")
+    .min(2, "Your Adress must be more than 2 letters")
     .required("Please Enter Adress"),
   selectFood: yup
     .mixed()
     .oneOf([
-      "",
       "klasikPizza",
       "ekoSucukluPizza",
       "margaritaPizza",
       "4PeynirliPizza",
       "barbekuPizza",
       "kebap",
-    ]),
+    ],"Please Select Food")
+    .required(),
   pizzaBoyut: yup
     .mixed()
-    .oneOf(["kucukBoy", "ortaBoy", "buyukBoy", "battalBoy"]),
+    .oneOf(["kucukBoy", "ortaBoy", "buyukBoy", "battalBoy"] , "Select one"),
   ekMalzeme: yup.mixed().oneOf([malzemeler]),
   ekstraInput: yup.string(),
   siparisAdet: yup.number().min(1, "Must be more than 1"),
@@ -215,7 +215,7 @@ function Form() {
         <div>
           {gelenDataYeniSiparis && (
             <div className="alertSiparis">
-              <p>Sipariş Başarı İle Alındı</p>
+              <p>Tebrikler! Pizza'nız yola çıktı</p>
             </div>
           )}
         </div>
@@ -228,3 +228,5 @@ function Form() {
 export default Form;
 
 //
+
+

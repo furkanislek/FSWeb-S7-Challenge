@@ -5,7 +5,7 @@
 describe("Pizza Form Yönlendirme", () => {
   it("Pizza Buton Form Yönlendirme", () => {
     cy.visit("http://localhost:3000/");
-    cy.get("#order-pizza > button").click();
+    cy.get('.link > button').click();
     cy.location().should((location) => {
       expect(location.href).to.eq("http://localhost:3000/pizza");
     });

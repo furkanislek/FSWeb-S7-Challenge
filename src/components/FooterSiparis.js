@@ -6,7 +6,7 @@ function FooterSiparis() {
   return (
     <div>
       <div className="footerContainerSiparis">
-        <div className="copyright">Copyright 2022 © Terra Pizza. Tüm hakları saklıdır.</div>
+        <div className="copyright">Copyright 2022 © Workintech Pizza. Tüm hakları saklıdır.</div>
         <div className="icons">
             <a href="https://github.com/furkanislek"  rel="noopener noreferrer" target="_blank">
                 <BsGithub className="gitIconsSiparis"/>
