@@ -134,7 +134,7 @@ function Form() {
       });
     }
   };
-
+  // console.log("Checkbox Deneme : ",checkboxForm);
   const handleChangeWithoutCheckbox = (event) => {
     const { name, value } = event.target;
     checkFormErrors(name, value);
@@ -157,6 +157,8 @@ function Form() {
       ekstraInput: formData.ekstraInput,
       siparisAdet: formData.siparisAdet,
     };
+
+
 
     axios
       .post("https://reqres.in/api/orders", { yeniCheckbox, yeniSiparis })
@@ -195,6 +197,7 @@ function Form() {
         console.log(err);
       });
   };
+
 
   return (
     <>
